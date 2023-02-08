@@ -6,7 +6,9 @@
  * description: vector get back
  */
 
+#include "vector.h"
+
 void *stu_vector_get_back(const stu_vector_t *ve)
 {
-    return(ve->vec + ve->elem_size);
+    return (&((char *)ve->vec)[ve->total - ve->elem_size]);
 }

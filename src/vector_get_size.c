@@ -6,7 +6,9 @@
  * description: get size
  */
 
+#include "vector.h"
+
 size_t stu_vector_get_size(const stu_vector_t *ve)
 {
-    return(ve->elem_size)
+    return (ve->used_capa);
 }

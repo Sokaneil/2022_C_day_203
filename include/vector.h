@@ -11,6 +11,8 @@
 #include "struct.h"
 #include <stddef.h>
 #include <stdlib.h>
+#include <criterion/criterion.h>
+#include <criterion/new/assert.h>
 
 typedef struct stu_vector stu_vector_t;
 

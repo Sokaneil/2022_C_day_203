@@ -6,7 +6,9 @@
  * description: vector get front
  */
 
+#include "vector.h"
+
 void *stu_vector_get_front(const stu_vector_t *ve)
 {
-    return (ve->vec + 0);
+    return (&((char *)ve->vec)[0]);
 }

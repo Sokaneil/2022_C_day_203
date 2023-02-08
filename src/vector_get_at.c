@@ -6,14 +6,13 @@
  * description: vector get an element at
  */
 
-#include <stddef;h>
+#include <stddef.h>
+#include "vector.h"
 
 void *stu_vector_get_at(const stu_vector_t *ve, size_t pos)
 {
-    if (ve) {
-        return(ve->vec + (pos * ve->elem_size));
-    }
-    if (pos > ve->elem_size) {
+    if (pos > (ve->used_capa - 1)) {
         return NULL;
     }
+    return (&((char *)ve->vec)[pos * ve->elem_size]);
 }
