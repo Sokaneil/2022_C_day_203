@@ -11,8 +11,14 @@
 
 void *stu_vector_get_at(const stu_vector_t *ve, size_t pos)
 {
+    size_t index;
+
+    index = pos * ve->elem_size;
+    if (ve->used_capa == 0) {
+        return NULL;
+    }
     if (pos > (ve->used_capa - 1)) {
         return NULL;
     }
-    return (&((char *)ve->vec)[pos * ve->elem_size]);
+    return (&((char *)ve->vec)[index]);
 }

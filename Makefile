@@ -11,6 +11,7 @@ SRCS	=	src/memset.c			\
 		src/arrset.c			\
 		src/memmove.c			\
 		src/new_vector.c		\
+		src/delete_vector.c		\
 		src/vector_push_back.c		\
 		src/vector_realloc.c		\
 		src/vector_pop_back.c		\
@@ -35,6 +36,10 @@ SRCS_TEST	=	test/new_vector.c	\
 			test/vector_pop_back.c	\
 			test/vector_pop_front.c	\
 			test/vector_erase_at.c	\
+			test/delete_vector.c	\
+			test/vector_get_at.c	\
+			test/vector_get_front.c	\
+			test/vector_get_back.c
 
 OBJS_TEST	=	$(SRCS_TEST:.c=.o)
 

@@ -10,5 +10,8 @@
 
 void *stu_vector_get_back(const stu_vector_t *ve)
 {
+    if (ve->used_capa == 0) {
+        return NULL;
+    }
     return (&((char *)ve->vec)[ve->total - ve->elem_size]);
 }
