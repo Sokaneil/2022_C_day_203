@@ -73,7 +73,7 @@ $(NAME_TEST): $(OBJS) $(OBJS_TEST)
 save:
 	git status
 	git add *
-	git commit -m "Immersion s2"
+	git commit -m "Vector"
 	git push
 
 test:
